@@ -1,0 +1,55 @@
+.header {
+  display: flex;
+  position: sticky;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  right: 0;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px;
+  padding-top: 15px;
+}
+
+.header__logoImg {
+  width: 90px;
+  margin-right: 100px;
+  object-fit: contain;
+}
+.header_links {
+  display: flex;
+  gap: 15px;
+}
+.header_links a {
+  text-transform: uppercase;
+  color: black;
+  font-weight: 500;
+  font-size: 15px;
+}
+.header_right {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.header_right > ul a {
+  text-transform: uppercase;
+  color: black;
+  font-weight: 500;
+  font-size: 15px;
+  z-index: 0;
+  position: relative;
+}
+/* this is not working */
+.header_menu .icon {
+  display: block;
+  position: relative;
+  z-index: 2;
+  cursor: pointer;
+}
+.header_right > ul {
+  display: flex;
+  gap: 15px;
+}
+.header_link_hidden {
+  visibility: hidden;
+}
